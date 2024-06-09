@@ -105,7 +105,7 @@ int removeNoRN(arvoreRN *arv, int valor, infos *inf){
             }else if(atual->Fdir && atual->Fesq){
                 //O nó possui os dois filhos, logo é necessário pegar o sucessor e trocar as chaves, removendo o sucessor no fim.
                 aux = atual; //aux guardará o elemento que será removido.
-                atual = atual->Fdir; //atual irá procurar o predecessor.
+                atual = atual->Fdir; //atual irá procurar o sucessor.
                 //Buscando o sucessor.
                 while(atual->Fesq){
                     atual = atual->Fesq;
