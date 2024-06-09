@@ -1,6 +1,3 @@
-#ifndef INC_12_ATIVIDADE_PRATICA_RUBRO_NEGRA_H
-#define INC_12_ATIVIDADE_PRATICA_RUBRO_NEGRA_H
-
 #include "ES.h"
 
 /**Estruturas da Árvore**/
@@ -50,5 +47,3 @@ void rotacaoDirRN(noRN *no);
 void analisaRN_Insercao(arvoreRN *arv, noRN *novo, infos *inf);
 
 void analisaRN_Remocao(arvoreRN *arv, noRN *no, infos *inf);
-
-#endif //INC_12_ATIVIDADE_PRATICA_RUBRO_NEGRA_H
