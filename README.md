@@ -12,3 +12,9 @@ Os resultados serão apresentados em tabelas, onde a primeira linha identifica o
 | --------- | ------ | ------- | --------- | ---------- |
 | AVL | 1ms | 9ms | 96ms | 968ms
 | Rubro-Negra | 1ms | 10ms | 111ms | 1193ms |
+
+## Remoção 
+| Estrutura | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+| --------- | ------ | ------- | --------- | ---------- |
+| AVL | 1ms | 6ms | 67ms | 708ms
+| Rubro-Negra | 1ms | 6ms | 69ms | 751ms |
