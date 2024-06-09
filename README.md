@@ -15,10 +15,25 @@ Os arquivos `ES.c` e `ES.h` são destinadas a entrada e saída dos dados, são n
 | Rotações | 9986 | 99983 | 999980 | 9999976 |
 
 **Remoção** 
-| Estrutura | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+|  | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
 | --------- | ------ | ------- | --------- | ---------- |
 | Tempo | 1ms | 7ms | 67ms | 733ms
 | Rotações | 4988 | 49984 | 499981 | 4999978 |
 
-**Consulta**
+**Consulta:**
+A consulta leva aproximadamente 1 milissegundo em todos os casos.
+
+## Rubro-Negra
+|  | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+| --------- | ------ | ------- | --------- | ---------- |
+| Tempo | 1ms | 11ms | 111ms | 1216ms
+| Rotações | 9976 | 99969 | 999963 | 9999956 |
+
+**Remoção** 
+|  | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+| --------- | ------ | ------- | --------- | ---------- |
+| Tempo | 1ms | 7ms | 69ms | 770ms
+| Rotações | 4989 | 49985 | 499982 | 4999979 |
+
+**Consulta:**
 A consulta leva aproximadamente 1 milissegundo em todos os casos.
