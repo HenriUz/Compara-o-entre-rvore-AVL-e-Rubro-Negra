@@ -1,6 +1,3 @@
-#ifndef INC_12_ATIVIDADE_PRATICA_ES_H
-#define INC_12_ATIVIDADE_PRATICA_ES_H
-
 //Estrutura que armazenará o vetor e o número de rotações.
 typedef struct infos infos;
 
@@ -21,5 +18,3 @@ void incRotation(infos *inf);
 
 //Função responsável por retornar o ponteiro para o primeiro elemento do vetor da estrutura passada.
 int *getVet(infos *inf);
-
-#endif //INC_12_ATIVIDADE_PRATICA_ES_H
