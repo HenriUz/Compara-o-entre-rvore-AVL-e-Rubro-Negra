@@ -52,7 +52,7 @@ int main(void) {
 
         inicio = clock();
         for(int i = 0; i < 1000; i++){
-            num = rand() % 10001; //Num vai ser um número aleatório entre 0 e 10.000.
+            num = rand() % (tamanho + 1); //Num vai ser um número aleatório entre 0 e tamanho.
             consultaAvl(arv2, num);
         }
         fim = clock();
@@ -96,7 +96,7 @@ int main(void) {
 
         inicio = clock();
         for(int i = 0; i < 1000; i++){
-            num = rand() % 10001; //Num vai ser um número aleatório entre 0 e 10.000.
+            num = rand() % (tamanho + 1); //Num vai ser um número aleatório entre 0 e tamanho.
             consultaRN(arv1, num);
         }
         fim = clock();
