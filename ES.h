@@ -1,3 +1,5 @@
+#define tamanho 10000
+
 //Estrutura que armazenará o vetor e o número de rotações.
 typedef struct infos infos;
 
