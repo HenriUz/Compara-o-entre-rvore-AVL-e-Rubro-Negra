@@ -19,8 +19,8 @@ infos *criaInfos(){
 
 //Função responsável por criar um vetor de 10000 elementos ordenados.
 void criaVetor(infos *inf){
-    inf->vet = (int*)malloc(sizeof(int) * 10000);
-    for(int i = 1; i <= 10000; i++){
+    inf->vet = (int*)malloc(sizeof(int) * tamanho);
+    for(int i = 1; i <= tamanho; i++){
         inf->vet[i-1] = i;
     }
 }
