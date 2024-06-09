@@ -35,7 +35,7 @@ int main(void) {
         //Início do processo de inserção.
         printf("\nInserindo os elementos do vetor.");
         inicio = clock();
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < tamanho; i++){
             insereNoAvl(arv2, getVet(inf)[i], inf);
         }
         fim = clock();
@@ -61,7 +61,7 @@ int main(void) {
         //Início do processo de remoção.
         printf("\n\nRemovendo os elementos em ordem, a partir do primeiro elemento do vetor.");
         inicio = clock();
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < tamanho; i++){
             removeNoAvl(arv2, getVet(inf)[i], inf);
         }
         fim = clock();
@@ -79,7 +79,7 @@ int main(void) {
         //Início do processo de inserção.
         printf("\nInserindo os elementos do vetor.");
         inicio = clock();
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < tamanho; i++){
             insereNoRN(arv1, getVet(inf)[i], inf);
         }
         fim = clock();
@@ -105,7 +105,7 @@ int main(void) {
         //Início do processo de remoção.
         printf("\n\nRemovendo os elementos em ordem, a partir do primeiro elemento do vetor.");
         inicio = clock();
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < tamanho; i++){
             removeNoRN(arv1, getVet(inf)[i], inf);
         }
         fim = clock();
