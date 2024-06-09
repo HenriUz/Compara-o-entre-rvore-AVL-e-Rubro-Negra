@@ -1,2 +1,2 @@
-# Compara-o-entre-rvore-AVL-e-Rubro-Negra
-Este repositório contém os algoritmos das árvores, bem como um programa que irá calcular o tempo de execução das operações de inserção, consulta e remoção, e o número de rotações de cada árvore.
+# Comparaçao entre Árvore AVL e Rubro-Negra
+Este projeto tem como objetivo comparar as Árvores AVL e Rubro-Negra em quesito ao tempo para inserir e remover 10.000 elementos ordenados, e consultar 1.000 elementos aleatórios, também será comparado o número de rotações que cada árvore fez em suas operações de remoção e inserção.
