@@ -1,6 +1,3 @@
-#ifndef INC_12_ATIVIDADE_PRATICA_AVL_H
-#define INC_12_ATIVIDADE_PRATICA_AVL_H
-
 #include "ES.h"
 
 /******* Estruturas da Árvore AVL *********/
@@ -56,5 +53,3 @@ void rotacaoEsqAvl(noAvl *noDesbal);
 //Caso um desbalanceamento seja identificado, chama a função do balanceamento.
 //Diferente da inserção, a função não pode parar após um desbalanceamento, logo é necessário chamar ela novamente com avó do nó.
 void atualizaFB_remocao(avl *arv, noAvl *pai, int chaveRemovida, infos *inf);
-
-#endif //INC_12_ATIVIDADE_PRATICA_AVL_H
