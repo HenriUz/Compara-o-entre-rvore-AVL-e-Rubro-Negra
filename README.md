@@ -4,3 +4,9 @@ Este projeto tem como objetivo comparar as Árvores AVL e Rubro-Negra em quesito
 
 # Arquivos
 Os arquivos `ES.c` e `ES.h` são destinadas a entrada e saída dos dados, são neles que estão as funções para gerar o vetor, incrementar o número de rotações, entre outras auxiliares. Já os arquivos `avl.c`, `avl.h`, `rubro_negra.c` e `rubro_negra.h` são os arquivos que contém as estruturas e funções das árvores dos seus respectivos nomes. Por fim a `main.c` é o código principal, é lá que as funções das árvores serão chamadas, e o tempo de cada operação será calculado.
+
+# Resultados
+## Inserção
+| Estrutura | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+| AVL | 1ms | 9ms | 96ms | 968ms
+| Rubro-Negra | 1ms | 10ms | 111ms | 1193 |
