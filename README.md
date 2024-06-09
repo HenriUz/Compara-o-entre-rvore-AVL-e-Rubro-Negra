@@ -8,5 +8,6 @@ Os arquivos `ES.c` e `ES.h` são destinadas a entrada e saída dos dados, são n
 # Resultados
 ## Inserção
 | Estrutura | 10.000 | 100.000 | 1.000.000 | 10.000.000 |
+| --------- | ------ | ------- | --------- | ---------- |
 | AVL | 1ms | 9ms | 96ms | 968ms
 | Rubro-Negra | 1ms | 10ms | 111ms | 1193 |
