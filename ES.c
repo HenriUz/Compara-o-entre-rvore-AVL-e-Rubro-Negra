@@ -3,8 +3,8 @@
 
 //Estrutura que armazenará o vetor e o número de rotações.
 struct infos{
-    int *vet;
-    int rotation;
+    int *vet; //Vetor com os elementos que serão inseridos/removidos.
+    int rotation; //Número de rotações
 };
 
 //Função responsável por alocar e inicializar uma estrutura infos.
@@ -37,7 +37,7 @@ void setRotation(infos *inf){
 
 //Função responsável por incrementar 1 no número de rotações da estrutura passada.
 void incRotation(infos *inf){
-    inf->rotation++;
+    inf->rotation+=1;
 }
 
 //Função responsável por retornar o ponteiro para o primeiro elemento do vetor da estrutura passada.
