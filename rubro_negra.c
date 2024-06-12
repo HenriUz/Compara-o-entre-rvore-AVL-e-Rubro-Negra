@@ -97,7 +97,7 @@ int removeNoRN(arvoreRN *arv, int valor, infos *inf){
             //Verificando os filhos que o nó possui.
             if(!atual->Fdir && !atual->Fesq){
                 //O nó não possui nenhum filho, logo é só desvincular ele do pai.
-                if(atual->chave >= atual->pai->chave){
+                if(atual == atual->pai->Fdir){
                     atual->pai->Fdir = NULL;
                 }else{
                     atual->pai->Fesq = NULL;
@@ -113,7 +113,7 @@ int removeNoRN(arvoreRN *arv, int valor, infos *inf){
                 //Copiando a chave do sucessor.
                 aux->chave = atual->chave;
                 //Desvinculando o sucessor com o pai dele.
-                if(atual->chave >= atual->pai->chave){
+                if(atual == atual->pai->Fdir){
                     atual->pai->Fdir = atual->Fdir;
                 }else{
                     atual->pai->Fesq = atual->Fdir;
@@ -125,7 +125,7 @@ int removeNoRN(arvoreRN *arv, int valor, infos *inf){
             }else if(atual->Fdir){
                 //O nó só possui o filho direito, logo é só desvincular o nó atual e vincular o filho direito com o pai do atual.
                 //Vinculando o pai com o filho.
-                if(atual->chave >= atual->pai->chave){
+                if(atual == atual->pai->Fdir){
                     atual->pai->Fdir = atual->Fdir;
                 }else{
                     atual->pai->Fesq = atual->Fdir;
@@ -135,7 +135,7 @@ int removeNoRN(arvoreRN *arv, int valor, infos *inf){
             }else{
                 //O nó só possui o filho esquerdo, segue a mesma lógica do de cima.
                 //Vinculando o pai com o filho.
-                if(atual->chave >= atual->pai->chave){
+                if(atual == atual->pai->Fdir){
                     atual->pai->Fdir = atual->Fesq;
                 }else{
                     atual->pai->Fesq = atual->Fesq;
@@ -362,9 +362,7 @@ void analisaRN_Remocao(arvoreRN *arv, noRN *noRem, infos *inf){
                         //Rotação direita no irmão.
                         //Corrigi o irmão (filho direito do pai).
                         //Leva ao caso 4.
-                        if(aux->Fesq){
-                            aux->Fesq->cor = 'b';
-                        }
+                        aux->Fesq->cor = 'b';
                         aux->cor = 'r';
                         rotacaoDirRN(aux);
                         incRotation(inf);
@@ -415,9 +413,7 @@ void analisaRN_Remocao(arvoreRN *arv, noRN *noRem, infos *inf){
                         //Rotação esquerda no irmão.
                         //Corrigi o irmão (filho esquerdo do pai).
                         //Leva ao caso 4.
-                        if(aux->Fdir){
-                            aux->Fdir->cor = 'b';
-                        }
+                        aux->Fdir->cor = 'b';
                         aux->cor = 'r';
                         rotacaoEsqRN(aux);
                         incRotation(inf);
