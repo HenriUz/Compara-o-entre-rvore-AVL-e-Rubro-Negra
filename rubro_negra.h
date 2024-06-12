@@ -43,7 +43,8 @@ void rotacaoEsqRN(noRN *no);
 //Função responsável por rotacionar a árvore avl para a direita.
 void rotacaoDirRN(noRN *no);
 
-//Função responsável por analisar e corrigir violações que possam ocorrer na inserção de uma árvore rubro-negra.
+//Função responsável por analisar e corrigir violações que possam ocorrer na inserção em uma árvore rubro-negra.
 void analisaRN_Insercao(arvoreRN *arv, noRN *novo, infos *inf);
 
+//Função responsável por analisar e corrigir violações que possam ocorrer na remoção em uma árvore rubro-negra.
 void analisaRN_Remocao(arvoreRN *arv, noRN *no, infos *inf);
