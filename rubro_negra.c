@@ -253,7 +253,7 @@ void rotacaoDirRN(noRN *no){
     no->pai->Fdir = no;
 }
 
-//Função responsável por analisar e corrigir violações que possam ocorrer na inserção de uma árvore rubro-negra.
+//Função responsável por analisar e corrigir violações que possam ocorrer na inserção em uma árvore rubro-negra.
 void analisaRN_Insercao(arvoreRN *arv, noRN *novo, infos *inf){
     //Se o nó não for a raíz, e o pai for vermelho devemos analisar os casos.
     while(novo->pai != arv->sentinela && novo->pai->cor == 'r'){
@@ -318,6 +318,7 @@ void analisaRN_Insercao(arvoreRN *arv, noRN *novo, infos *inf){
     arv->sentinela->Fdir->cor = 'b';
 }
 
+//Função responsável por analisar e corrigir violações que possam ocorrer na remoção em uma árvore rubro-negra.
 void analisaRN_Remocao(arvoreRN *arv, noRN *noRem, infos *inf){
     noRN *aux = NULL; //Variável que representa o nó substituto, ou o irmão, caso o sucessor seja preto ou inexistente.
     //Verificando se existe algum substituto. É impossível haver mais de 1.
