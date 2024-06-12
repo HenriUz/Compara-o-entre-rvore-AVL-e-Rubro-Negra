@@ -41,3 +41,8 @@ A consulta leva aproximadamente 1 milissegundo em todos os casos.
 
 **Consulta:**
 A consulta leva aproximadamente 1 milissegundo em todos os casos.
+
+# Conclusão
+
+No geral, a Árvore Rubro-Negra é muito mais utilizada em cenários reais por possuir um melhor pior caso que a Árvore AVL, que é mais lenta na inserção e remoção, por ser bem mais restrita. Mas com estes testes é possível verificar o caso onde a Árvore Rubro-Negra realiza mais rotações que a Árvore AVL, remoção, e é interessante notar isso porque no papel era para a Árvore Rubro-Negra realizar menos rotações, mas a maneira como o balanceamento é propagado pode fazer com que mais rotações sejam realizadas em cenários específicos, como quando elementos são removidos de uma sequência de nós altamente desbalanceados. Por outro lado, a Árvore AVL possui um balanceamento muito mais estrito, e, portanto, podem precisar de rotações mais profundas para reequilibrar após uma remoção, mas essas rotações são focadas em menos nós, pois a altura das subárvores é estritamente controlada. 
+
