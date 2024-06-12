@@ -21,10 +21,10 @@ int main(void) {
     //Criando o vetor ordenado de 10000 elementos.
     criaVetor(inf);
 
-    printf("Qual árvore você deseja verificar?\n1 - AVL; 2 - Rubro-Negra.");
+    printf("Qual árvore você deseja verificar?\n1 - AVL; 2 - Rubro-Negra: ");
     scanf("%d", &resp);
     if(resp == 1){
-        //Árvore AVL
+        /*** Árvore AVL ***/
 
         //Criando árvore avl.
         arv2 = criaArvore();
@@ -32,7 +32,7 @@ int main(void) {
             return 1;
         }
 
-        //Início do processo de inserção.
+        /*** Início do processo de inserção. ***/
         printf("\nInserindo os elementos do vetor.");
         inicio = clock();
         for(int i = 0; i < tamanho; i++){
@@ -44,7 +44,7 @@ int main(void) {
         //Setando o número de rotações para 0.
         setRotation(inf);
 
-        //Início do processo de consulta.
+        /*** Início do processo de consulta. ***/
         printf("\n\nConsultando 1000 elementos aleatórios.");
 
         //Setando a semente dos números aleatórios para o tempo atual do computador.
@@ -58,7 +58,7 @@ int main(void) {
         fim = clock();
         printf("\nConsultas finalizadas.\nTempo em milissegundos: %f", (double)(fim - inicio)/(CLOCKS_PER_SEC/1000));
 
-        //Início do processo de remoção.
+        /*** Início do processo de remoção. ***/
         printf("\n\nRemovendo os elementos em ordem, a partir do primeiro elemento do vetor.");
         inicio = clock();
         for(int i = 0; i < tamanho; i++){
@@ -68,7 +68,7 @@ int main(void) {
         printf("\nRemoções finalizadas.\nNúmero de rotações: %d\nTempo em milissegundos: %f", getRotation(inf), (double)(fim - inicio)/(CLOCKS_PER_SEC/1000));
         free(arv2);
     }else{
-        //Árvore Rubro-Negra
+        /*** Árvore Rubro-Negra ***/
 
         //Criando árvore rubro-negra.
         arv1 = criaArv();
@@ -76,7 +76,7 @@ int main(void) {
             return 1;
         }
 
-        //Início do processo de inserção.
+        /*** Início do processo de inserção. ***/
         printf("\nInserindo os elementos do vetor.");
         inicio = clock();
         for(int i = 0; i < tamanho; i++){
@@ -88,7 +88,7 @@ int main(void) {
         //Setando o número de rotações para 0.
         setRotation(inf);
 
-        //Início do processo de consulta.
+        /*** Início do processo de consulta. ***/
         printf("\n\nConsultando 1000 elementos aleatórios.");
 
         //Setando a semente dos números aleatórios para o tempo atual do computador.
@@ -102,7 +102,7 @@ int main(void) {
         fim = clock();
         printf("\nConsultas finalizadas.\nTempo em milissegundos: %f", (double)(fim - inicio)/(CLOCKS_PER_SEC/1000));
 
-        //Início do processo de remoção.
+        /*** Início do processo de remoção. ***/
         printf("\n\nRemovendo os elementos em ordem, a partir do primeiro elemento do vetor.");
         inicio = clock();
         for(int i = 0; i < tamanho; i++){
